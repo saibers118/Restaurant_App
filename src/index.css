@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar{
+    background: none;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.2);
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(0,0,0,0.4);
+}
+body::-webkit-scrollbar{
+    background: black;
+    border-radius: 0;
+
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.607);
+    border-radius: 0;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(255, 255, 255, 0.407);
+}
+.headerimage img {
+  height: 55px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  background: none;
+}
+.headerimage{
+    color: black;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+.bg-aliceblue{
+
+    background-color: antiquewhite;
+}
+.underline{
+    margin-top: -50px;
+}
+.sectiontitle{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center
+    ;
+    justify-content: center;
+}
+.sectiontitle::before{
+ content: '';
+ position: relative;
+ top: 8px;
+ width: 100px;
+ height: 4px;
+ background: rgb(255, 111, 111);
+
+}
+.ulheader{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+nav{
+    margin-left: 120px;
+    
+}
+nav button{
+    transform: var(--transition);
+
+}
+nav button:hover{
+    color: rgb(255, 87, 87);
+    transition: var(--transition);
+}
+
+:root{
+    --transition: all 100ms ease-in-out;
+}
+.popup{
+    
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#frbutton{
+    font-weight: bold;
+   cursor: pointer;
+    
+    }
+    #frbutton:hover{
+    
+    color: white;
+}
+#enbutton{
+    font-weight: bold;
+    color: white;
+}
+#darkmodebutton{
+    cursor: pointer;
+    transition: var(--transition)   ;
+}
+#darkmodebutton:hover{
+    background-color: rgb(240, 240, 240);
+}
+#cartbutton{
+    cursor: pointer;
+    transition: var(--transition)   ;
+}
+#cartbutton:hover{
+    background-color: rgb(255, 40, 40);
+}
+#menubutton{
+    cursor: pointer;
+    transition: var(--transition)   ;
+}   
+#menubutton:hover{
+    color: rgb(255, 87, 87);
+}
